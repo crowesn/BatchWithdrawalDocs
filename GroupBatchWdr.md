@@ -8,7 +8,7 @@
 * Check print bibs with URLs and recatalog as e-format where appropriate
 * Remove Worldcat holdings for titles that we no longer hold
 
-##1. Create item review file##
+##1. Create item review file
 In Sierra, create review file  based on ```item status='w'``` for local jurisdictions.
 
 ```
@@ -37,7 +37,7 @@ Use spreadsheet to count, figure and record adjustments for statistics for the w
 ![*Sierra Statisics Interface*](images/SierraStatistics.png)
   
 
-##3. Organize the spreadsheet####   
+##3. Organize the spreadsheet   
 
 Reorder lines and columns on the spreadsheet to correspond to the ARL format reporting categories and the order of the locations codes in the Stats database form.  
 
@@ -88,7 +88,7 @@ BUGP-Phys (Phys)
 ![*Spreadsheet Layout Example*](images/Spreadsheet.png)
 
 
-##4. Count Materials##  
+##4. Count Materials  
 Most of the items will be 1:1 item to piece, however, many item records represent materials with multiple pieces/formats. In order to determine and count status for these multi-facetd materials, we examine the item types that with multis more closely.  
 Export fields from the review file that will indicate format and piece count for items that don't have explicit itypes and/or could have multiple pieces e.g. Mixed Materials, Projected, Computer. Record accompanying pieces and adjust count by format on the excel spreadsheet.  You can use the Excel *notes* feature to add comments about adjustments.
 Export fields:
@@ -103,11 +103,11 @@ Export fields:
 * OCLC #
 * TITLE
 
-``````Microform``````  
+_Microform_  
 
 > Multiple pieces to a single item record. See item MESSAGES field). Make note of stats by location. \*Item counts as 1 record, count addition as "Pieces" in the spreadsheet.
  
-``````Computer``````  
+_Computer_  
 
 > For Computer itypes including *99*, determin content type by examining *bcode2* in the bib and record under appropriate format as *pieces*. Deduct as needed from itype 22, 72, and 99. Typically assign to arbitrary itype i.e. Monographs = itype '1'. *For added materials such as CDROMS from mixed material itypes, record as computer*.
 
@@ -131,7 +131,7 @@ Export fields:
 
 > Limit by *ITEMMESSAGE* = 'p' (check for parts). These will be primarily in CCM.
 
-##5. Create Bib List##
+##5. Create Bib List
 
 Create a bib review file based your item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
 
