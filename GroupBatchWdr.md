@@ -103,15 +103,15 @@ Export fields:
 * OCLC #
 * TITLE
 
-_Microform_  
+*Microform*  
 
 > Multiple pieces to a single item record. See item MESSAGES field). Make note of stats by location. \*Item counts as 1 record, count addition as "Pieces" in the spreadsheet.
  
-_Computer_  
+*Computer* 
 
 > For Computer itypes including *99*, determin content type by examining *bcode2* in the bib and record under appropriate format as *pieces*. Deduct as needed from itype 22, 72, and 99. Typically assign to arbitrary itype i.e. Monographs = itype '1'. *For added materials such as CDROMS from mixed material itypes, record as computer*.
 
-``````Sound Recording``````  
+*Sound Recording*  
 
 > Itypes 16-17, 66-67. Check item MESSAGE field for multipe discs. 
 
@@ -119,31 +119,31 @@ _Computer_
 
 > Itypes 23 and 73, likely multiple pieces; record item record as 1, then additional in Pieces.  
 
-``````Mixed Media``````  
+*Mixed Media*  
 
 > Itypes 25 and 75, multiple pieces to a single item record, check the MESSAGES field. Easiest approach is to move these columns to a seperate sheet and record item plus added pieces on the main sheet under appropriate format, use arbitrary itype e.g. Monograph = itype '1'. Check bcode2 to determin format of text; ``````DO NOT`````` attempt to determine format of added media: CD/DVDROMS are recorded as computer type.
 
-``````Reserve``````  
+*Reserve*  
 
 > Move columns to secondary sheet and check bcode2 to determine format. Record in *Reserves* row in main spreadsheet, use arbitrary itype that correspondes to correct format.
 
-``````Score``````  
+*Score*  
 
 > Limit by *ITEMMESSAGE* = 'p' (check for parts). These will be primarily in CCM.
 
-##5. Create Bib List
+##5. Create Bib List  
 
 Create a bib review file based your item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
 
-##6. Delete Items##
+##6. Delete Items  
 
 Run a batch delete on the item review file. Some items will not be deleteable because they are still checked out, or, on reserve, or attached to other bibs. Examine and delete remaining items manually, based on batch delete report.
 
-##7. Run Loc Sync##
+##7. Run Loc Sync  
 
 Run Loc Sync on the bib review file.
 
-##8. Cleanup URLs On Print Bibs##
+##8. Cleanup URLs On Print Bibs  
 
 ```
 ITEM LOCATION = UINT
