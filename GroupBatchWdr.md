@@ -8,16 +8,17 @@
 * Check print bibs with URLs and recatalog as e-format where appropriate
 * Remove Worldcat holdings for titles that we no longer hold
 
-##1. Create item review file
-In Sierra, create review file  based on ```item status='w'``` for local jurisdictions.
+##1. Create All review files in Sierra: Item, Bibliographic, Checkin records
 
-```
-ITEM  STATUS  equal to  "w"
-AND ITEM MARC Tag 086 = <blank> #exclude gov docs
-AND (ITEM  LOCATION  between  "u"and "v"
-OR (ITEM  LOCATION  starts with  "tdp"
-AND ITEM  BARCODE  starts with  "404-"))
-```
+### Create Item list. In Sierra, create review file using Saved Search Strategy ```BatchWdr-ucrawfotj UL batch wdr (items)``` for local jurisdictions, exclude Gov't Documents locations which are handled separately.
+
+![*Saved Item Search Strategy*](images/SavedItemSearch.png)
+
+
+### Create Bib List.  Create a bib review file from item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
+
+### Create Checkin LIst. Create a checkin review file from the bib review file. There will not always be a checkin record for every bib record, and there will probably be some checkin records for jurisdictions and libraries not included in the process.  Either remove use Golbal Update to remove unneeded records, or remove them from the spreadsheet that will be created.
+
 
 ##2. Create Spreadsheet##
 Use spreadsheet to count, figure and record adjustments for statistics for the withdrawal.
