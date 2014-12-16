@@ -10,21 +10,34 @@
 
 ##1. Create All review files in Sierra: Item, Bibliographic, Checkin records
 
-### Create Item list. 
+#### Create Item list. 
 
 In Sierra, create review file using Saved Search Strategy ```BatchWdr-ucrawfotj UL batch wdr (items)``` for local jurisdictions, exclude Gov't Documents locations which are handled separately.
 
 ![*Saved Item Search Strategy*](images/SavedItemSearch.PNG)
 
 
-### Create Bib List.
+#### Create Bib List.
 
 Create a bib review file from item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
 
-### Create Checkin List.
+![*Create Bib file from Item review file*](images/CreateBibReviewFile.png)
 
-Create a checkin review file from the bib review file. There will not always be a checkin record for every bib record, and there will probably be some checkin records for jurisdictions and libraries not included in the process.  Either remove use Golbal Update to remove unneeded records, or remove them from the spreadsheet that will be created.
+#### Create Checkin List.
 
+Create a checkin review file from the bib review file. There may be checkin records not needed for the process; either remove from the review file in Global Update, or delete from the spreadsheet that will be created.
+
+![*Create Checkin file from Bib review file*](images/CreateCheckinReviewFile.png)
+
+In Global Update Function, view the Checkin review file by location. Remove checkin records for Affiliates, Clermont, UC Blue Ash, and Law; retain checkin records for HSL and SWORD.
+
+![*Remove unnecessary Checkin records*](images/RemoveCheckins.png)
+
+![*Final Checkin review file*](images/FinalCheckinFile.png)
+
+In Create Lists Function, Apply Saved Export '''BatchWdr checkin review''' to export selected fields to tab-delimited text file, open and save in Excel. Send Excel spreadsheet to designated staff to review and edit affected Checkin records.
+
+![*Export Checkin data for review*](images/ExportCheckin.png)
 
 ##2. Create Spreadsheet##
 Use spreadsheet to count, figure and record adjustments for statistics for the withdrawal.
@@ -138,9 +151,6 @@ Export fields:
 
 > Limit by *ITEMMESSAGE* = 'p' (check for parts). These will be primarily in CCM.
 
-##5. Create Bib List  
-
-Create a bib review file based your item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
 
 ##6. Delete Items  
 
