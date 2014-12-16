@@ -10,14 +10,20 @@
 
 ##1. Create All review files in Sierra: Item, Bibliographic, Checkin records
 
-### Create Item list. In Sierra, create review file using Saved Search Strategy ```BatchWdr-ucrawfotj UL batch wdr (items)``` for local jurisdictions, exclude Gov't Documents locations which are handled separately.
+### Create Item list. 
 
-![*Saved Item Search Strategy*](images/SavedItemSearch.png)
+In Sierra, create review file using Saved Search Strategy ```BatchWdr-ucrawfotj UL batch wdr (items)``` for local jurisdictions, exclude Gov't Documents locations which are handled separately.
+
+![*Saved Item Search Strategy*](images/SavedItemSearch.PNG)
 
 
-### Create Bib List.  Create a bib review file from item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
+### Create Bib List.
 
-### Create Checkin LIst. Create a checkin review file from the bib review file. There will not always be a checkin record for every bib record, and there will probably be some checkin records for jurisdictions and libraries not included in the process.  Either remove use Golbal Update to remove unneeded records, or remove them from the spreadsheet that will be created.
+Create a bib review file from item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
+
+### Create Checkin List.
+
+Create a checkin review file from the bib review file. There will not always be a checkin record for every bib record, and there will probably be some checkin records for jurisdictions and libraries not included in the process.  Either remove use Golbal Update to remove unneeded records, or remove them from the spreadsheet that will be created.
 
 
 ##2. Create Spreadsheet##
