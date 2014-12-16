@@ -12,7 +12,7 @@
 
 ### Create Item list. In Sierra, create review file using Saved Search Strategy ```BatchWdr-ucrawfotj UL batch wdr (items)``` for local jurisdictions, exclude Gov't Documents locations which are handled separately.
 
-![*Saved Item Search Strategy*](images/SavedItemSearch.png)
+![*Saved Item Search Strategy*](images/SavedItemSearch.PNG)
 
 
 ### Create Bib List.  Create a bib review file from item review file with no filters/qualifiers (you want a review file of all the attached bib records). After deleting the items marked for withdrawal, you will need this review file to determine WorldCat holdings and for cleanup.
