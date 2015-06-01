@@ -29,7 +29,7 @@ Create a checkin review file from the bib review file. There may be checkin reco
 
 ![*Create Checkin file from Bib review file*](images/CreateCheckinReviewFile.png)
 
-In Global Update Function, view the Checkin review file by location. Remove checkin records for Affiliates, Clermont, UC Blue Ash, and Law; retain checkin records for HSL and SWORD.
+In Global Update Function, view the Checkin review file by location. Remove checkin records for Affiliates, Clermont, UC Blue Ash, and Law; retain checkin records for Univ. Libs, HSL and SWORD.
 
 ![*Remove unnecessary Checkin records*](images/RemoveCheckins.png)
 
